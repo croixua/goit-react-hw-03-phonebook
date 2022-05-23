@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Filter({ changeFilter, filter }) {
   return (
     <>
@@ -6,3 +8,8 @@ export default function Filter({ changeFilter, filter }) {
     </>
   );
 }
+
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  changeFilter: PropTypes.any.isRequired,
+};
